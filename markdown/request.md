@@ -6,6 +6,5 @@
 #[get("/test/<index>")]
     pub fn api_post(index : i32) -> String{
         format!("index : {}",index)
-        
     }
 ```

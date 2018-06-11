@@ -4,6 +4,7 @@
 extern crate rocket;
 
 mod router;
+mod model;
 
 use router::api_router::api_router;
 
@@ -14,10 +15,11 @@ fn index() -> &'static str {
 
 
 fn main() {
+
     rocket::ignite().mount("/",
     routes![
         index,
         api_router::api_get,
-        // api_router::api_post
+
         ]).launch();
 }

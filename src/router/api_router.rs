@@ -7,14 +7,9 @@ pub mod api_router {
         "Get!"
     }
 
-    // #[post("/test/<index>")]
-    // pub fn api_post(index : i32) -> String{
-    //     format!("index : {}",index);
-
-    // }
-
-    // #[post("/test/test", format = "application/json", data ="<data>")]
-    // pub fn api_body_parse_test(data : &RawStr) -> String{
-    //     data.to_string();
-    // }
+    #[post("/test/<index>")]
+    pub fn api_post(index : i32) -> &'static str {
+        let mut input_text = String::new();
+        print!("{}");
+    }
 }
